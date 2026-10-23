@@ -29,6 +29,12 @@ on pushes to `main` and on every pull request. It checks that:
 - while **Status** says `starter`, no implementation files have been added
   (update the Status line when the first product lands).
 
+The shared security workflow from
+[`bookchaowalit/platform-ci-workflows`](https://github.com/bookchaowalit/platform-ci-workflows)
+(v1.1.1: gitleaks, Semgrep, OSV-Scanner, Trivy) runs in the same CI. The shared
+language CIs (`ci-node.yml`, `ci-python.yml`) are added with the first product
+scaffold, once there is a stack to lint, type check and test.
+
 ## Local development
 
 There is no runtime or dependency setup yet. The only local check is:
